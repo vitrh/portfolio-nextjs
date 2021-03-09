@@ -26,8 +26,9 @@ html {
 
     a, a:visited, a:hover {
     cursor: pointer;
+  
     text-decoration: none;
-    color: ${color.$white};
+    /* color: ${color.$white}; */
     } 
   }
 `;

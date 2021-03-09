@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import {
   NavDiv,
@@ -7,9 +7,15 @@ import {
   InstagramIcon,
   LinkedinIcon,
   GithubIcon,
+  HamburgerMenu,
+  HamburgerDiv,
+  Menu,
+  MenuLink,
 } from "./Navbar.styled";
 
 export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <NavDiv>
       <Link href="/" passHref>
@@ -25,6 +31,16 @@ export const Navbar = () => {
       <a href="https://github.com/vitrh">
         <GithubIcon />
       </a>
+      <HamburgerDiv onClick={() => setIsOpen(!isOpen)}>
+        <HamburgerMenu />
+        <HamburgerMenu />
+      </HamburgerDiv>
+      <Menu isOpen={isOpen}>
+        <MenuLink href="">Home</MenuLink>
+        <MenuLink href="">About me</MenuLink>
+        <MenuLink href="">Work</MenuLink>
+        <MenuLink href="">Contact</MenuLink>
+      </Menu>
     </NavDiv>
   );
 };

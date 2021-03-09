@@ -4,6 +4,7 @@ export const $black = "#141414";
 export const $red = "#DC0C0C";
 export const $lightred = "#BF2929";
 export const $verylightred = "#D73B3B";
+export const $darkblue = "#072142";
 
 // Hover & Click Colors
 

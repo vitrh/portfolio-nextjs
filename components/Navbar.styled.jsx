@@ -1,9 +1,10 @@
 import { urlObjectKeys } from "next/dist/next-server/lib/utils";
 import styled, { keyframes } from "styled-components";
 import * as color from "../theme/GlobalColor";
+import * as typeface from "../theme/GlobalFont";
 
 export const NavDiv = styled.nav`
-  background: ${color.$darkblue};
+  background: var(--color-secondaryBackground);
 
   display: flex;
   flex-wrap: wrap;
@@ -18,7 +19,7 @@ export const HamburgerMenu = styled.a`
   height: 2px;
   width: 2rem;
 
-  border: 1px solid ${color.$white};
+  border: 1px solid var(--color-navText);
   border-radius: 5px;
   margin-bottom: 0.5rem;
 
@@ -54,21 +55,20 @@ export const Menu = styled.div`
   overflow: hidden;
   flex-direction: column;
 
-  width: 100vw;
+  width: 95vw;
 
   height: ${({ isOpen }) => (isOpen ? "94.8vh" : "0")};
 
-  background-color: ${color.$darkblue};
-  color: ${color.$gray};
+  background-color: var(--color-secondaryBackground);
 `;
 
 export const MenuLink = styled.a`
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  color: ${color.$white};
-
   font-size: 5rem;
+
+  color: var(--color-navText);
 
   &:hover {
     color: ${color.$gray};
@@ -85,48 +85,11 @@ export const StyledLink = styled.a`
   padding: 0rem 2rem;
 `;
 
-export const SocialMedia = styled.div`
-  align-items: center;
-  justify-content: space-between;
-
-  padding-right: 2rem;
-`;
-
 export const Logo = styled.a`
-  background-image: url("../public/svg/Logo.svg");
-  height: 2.5rem;
-  width: 2.5rem;
   cursor: pointer;
+  color: var(--color-navText);
 
-  margin-left: 3rem;
-  margin-top: 1rem;
-`;
-export const Instagram = styled.a`
-  background-image: url("./instagram.png");
-  height: 2.5rem;
-  width: 2.5rem;
-  cursor: pointer;
-
-  margin-left: 3rem;
-  margin-top: 1rem;
-`;
-export const Github = styled.a`
-  background-image: url("");
-  height: 2.5rem;
-  width: 2.5rem;
-  cursor: pointer;
-
-  margin-left: 3rem;
-  margin-top: 1rem;
-`;
-export const LinkedIn = styled.a`
-  background-image: url("../public/svg/LinkedIn.svg");
-  height: 2.5rem;
-  width: 2.5rem;
-  cursor: pointer;
-
-  margin-left: 3rem;
-  margin-top: 1rem;
+  font-size: 2rem;
 `;
 
 export const MenuBG = styled.div`

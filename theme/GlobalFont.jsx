@@ -10,9 +10,9 @@ export const baseLineHeight = "1.5 !default";
 
 // Font Weights
 export const $light = 300;
-export const $regular = 400;
-export const $medium = 500;
-export const $semiBold = 600;
+export const $regular = 400; // use
+export const $medium = 500; // use
+export const $semiBold = 600; // use
 
 // Font Sizes
 export const $lgfont = "7.5rem";

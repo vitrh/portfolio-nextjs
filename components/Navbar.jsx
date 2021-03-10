@@ -26,7 +26,7 @@ export const Navbar = () => {
     <NavDiv>
       <Link href="/" passHref>
         {/* <StyledLink>vinhthong.trinh@hotmail</StyledLink> */}
-        <Logo />
+        <Logo>🚀</Logo>
       </Link>
       <motion.div
         initial="hidden"
@@ -44,15 +44,7 @@ export const Navbar = () => {
             },
           },
         }}
-      >
-        <SocialMedia>
-          <Instagram href="https://www.instagram.com/vnhtrnh/" />
-
-          <LinkedIn href="https://www.linkedin.com/in/vinh-thong-trinh-556b63202/" />
-
-          <Github href="https://github.com/vitrh" />
-        </SocialMedia>
-      </motion.div>
+      ></motion.div>
       <motion.div
         initial="hidden"
         animate="visible"

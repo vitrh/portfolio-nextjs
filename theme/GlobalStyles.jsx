@@ -19,6 +19,7 @@ html {
     overflow-x: hidden;
     color: ${color.$white};
     font-weight: ${typeface.$medium};
+    background-color: var(--color-secondaryBackground);
 
     h1,h2,h3,h4,h5,h6, p {
       margin: 0;

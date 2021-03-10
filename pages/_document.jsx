@@ -1,5 +1,8 @@
 import Document from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import { ScriptHydrationTheme } from "next-theme-mode";
+import { Theme } from "../theme/Theme";
+import NextDocument, { Head, Html, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -26,5 +29,18 @@ export default class MyDocument extends Document {
     } finally {
       sheet.seal();
     }
+  }
+
+  render() {
+    return (
+      <Html>
+        <Head />
+        <body>
+          <ScriptHydrationTheme themes={Theme} />
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
   }
 }

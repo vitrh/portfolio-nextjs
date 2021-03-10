@@ -1063,6 +1063,11 @@ native-url@0.3.4:
   dependencies:
     querystring "^0.2.0"
 
+next-theme-mode@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/next-theme-mode/-/next-theme-mode-1.0.8.tgz#8218962fb5df56d40238b339aab4b74cc4b242e1"
+  integrity sha512-NeBZGhLbQk0vRddwrqDd1QYr4o0tdSu5IYk2dtl3AhN3d5paxM2FIImxsCdQz+QwUMoXqX/Fcyf6seUHP96ZJg==
+
 next@10.0.8:
   version "10.0.8"
   resolved "https://registry.yarnpkg.com/next/-/next-10.0.8.tgz#a2232c11ffad974d67f3d572b8db2acaa5ddedd7"

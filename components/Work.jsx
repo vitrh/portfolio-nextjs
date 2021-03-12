@@ -1,11 +1,16 @@
 import React from "react";
 import {
+  MoreDiv,
   ProjectContainer,
   ProjectDiv,
   ProjectLeft,
   ProjectPic,
   ProjectRight,
+  RightSideDiv,
   WorkDiv,
+  More,
+  SideLine,
+  SideName,
 } from "./Work.styled";
 
 export const Work = () => {
@@ -25,10 +30,19 @@ export const Work = () => {
             <ProjectPic src="beispielProject1.svg" />
           </ProjectRight>
           <ProjectLeft>
-            <p>"......." is my first website. Made with React.js & Nextjs</p>
+            <p>"......." could be your website. Made with React.js & Nextjs</p>
           </ProjectLeft>
         </ProjectDiv>
+        <MoreDiv>
+          <More>more...</More>
+        </MoreDiv>
       </ProjectContainer>
+
+      <RightSideDiv>
+        <SideLine></SideLine>
+        <SideName>Work</SideName>
+        <SideLine></SideLine>
+      </RightSideDiv>
     </WorkDiv>
   );
 };

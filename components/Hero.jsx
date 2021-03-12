@@ -6,13 +6,15 @@ import {
   NameBeschreibung,
   NameContainer,
   NameTitel,
+  ScrollDiv,
   Slogan,
   SloganContainer,
+  HeroDivDiv,
 } from "./Hero.styled";
 
 export const Hero = () => {
   return (
-    <>
+    <HeroDivDiv>
       <HeroDiv>
         <NameContainer>
           <LinieDiv>
@@ -27,7 +29,9 @@ export const Hero = () => {
           </LinieDiv>
 
           <NameBeschreibung>
-            web developer <br /> full-stack engineer.
+            web developer. <br /> full-stack engineer.
+            <br />
+            co-founder of Lua.
           </NameBeschreibung>
         </NameContainer>
       </HeroDiv>
@@ -40,6 +44,6 @@ export const Hero = () => {
           Is what I do.
         </Slogan>
       </SloganContainer>
-    </>
+    </HeroDivDiv>
   );
 };

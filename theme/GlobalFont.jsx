@@ -1,6 +1,6 @@
 // Font Families
 export const poppins = `'Poppins', sans-serif`;
-export const righteous = `'Righteous', cursive`;
+export const monserrat = `'Montserrat', sans-serif`;
 // export const ibm = `'IBM Plex Sans', sans-serif`;
 // export const manrope = `'Manrope', sans-serif`;
 

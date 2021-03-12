@@ -8,17 +8,17 @@ export const Theme = {
     /**
      * Text Colors
      */
-    primaryText: "#192635",
+    primaryText: "#061D3A",
     navText: "#000",
     divText: "#000",
-    projects: "#0068BB",
+    projects: "linear-gradient(180deg, #0068bb 0% ,rgba(82, 5, 225, 1) 100%",
   },
   dark: {
     /**
      * Background Color
      */
-    primaryBackground: "#072142",
-    secondaryBackground: "#072142",
+    primaryBackground: "#061D3A",
+    secondaryBackground: "#061D3A",
     /**
      * Text Colors
      */

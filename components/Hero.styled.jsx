@@ -3,6 +3,13 @@ import styled, { keyframes } from "styled-components";
 import * as color from "../theme/GlobalColor";
 import * as typeface from "../theme/GlobalFont";
 
+export const HeroDivDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+`;
+
 export const HeroDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,9 +17,6 @@ export const HeroDiv = styled.div`
   justify-content: center;
 
   color: var(--color-divText);
-
-  margin-left: 100px;
-  margin-right: 100px;
 `;
 
 export const NameContainer = styled.div`
@@ -25,6 +29,7 @@ export const NameContainer = styled.div`
 `;
 
 export const NameTitel = styled.h1`
+  line-height: 1.3;
   font-size: 7rem;
   font-weight: ${typeface.$semiBold};
 `;
@@ -33,7 +38,7 @@ export const NameBeschreibung = styled.p`
   font-size: 18px;
   font-weight: ${typeface.$medium};
 
-  margin-top: 4rem;
+  margin-top: 1rem;
 `;
 
 export const SloganContainer = styled.div`

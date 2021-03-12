@@ -46,7 +46,7 @@ export const Navbar = () => {
       <Menu isOpen={isOpen}>
         <MenuDiv>
           {/* <MenuBG isOpen={isOpen} /> */}
-          <MenuLink href="">Home</MenuLink>
+          <MenuLink href="/">Home</MenuLink>
           <MenuLink href="">About me</MenuLink>
           <MenuLink href="">Work</MenuLink>
           <MenuLink href="">Contact</MenuLink>

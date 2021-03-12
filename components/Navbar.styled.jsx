@@ -95,7 +95,7 @@ export const MenuLink = styled.a`
     margin-bottom: 1rem;
   }
   &:first-child {
-    margin-top: 8rem;
+    margin-top: 2em;
   }
 `;
 

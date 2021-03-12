@@ -25,7 +25,7 @@ export const NameContainer = styled.div`
 `;
 
 export const NameTitel = styled.h1`
-  font-size: 4.375rem;
+  font-size: 7rem;
   font-weight: ${typeface.$semiBold};
 `;
 
@@ -46,6 +46,17 @@ export const SloganContainer = styled.div`
 `;
 
 export const Slogan = styled.p`
-  font-size: 2.57rem;
+  font-size: 3rem;
   font-weight: ${typeface.$regular};
+`;
+
+export const LinieDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Linie = styled.img`
+  object-fit: contain;
+  margin-left: 15rem;
 `;

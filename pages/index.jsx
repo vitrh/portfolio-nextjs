@@ -5,6 +5,7 @@ import About from "./about";
 import Contact from "./contact";
 import { useTheme } from "next-theme-mode";
 import { Hero } from "../components/Hero";
+import { Work } from "../components/Work";
 
 export default function Home() {
   const { colorMode, setColorMode } = useTheme();
@@ -17,6 +18,7 @@ export default function Home() {
 
   return (
     <div>
+      <button onClick={() => changeTheme()}>Change Mode</button>
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -25,9 +27,9 @@ export default function Home() {
         />
         <title>Vinh's Portfolio</title>
       </Head>
-      <Navbar></Navbar>{" "}
-      <button onClick={() => changeTheme()}>Change Mode</button>
-      <Hero></Hero>
+      <Navbar />
+      <Hero />
+      <Work />
       {/* <Footer /> */}
     </div>
   );

@@ -3,11 +3,21 @@ import styled, { keyframes } from "styled-components";
 import * as color from "../theme/GlobalColor";
 import * as typeface from "../theme/GlobalFont";
 
-export const NavDiv = styled.nav`
-  background: var(--color-secondaryBackground);
+export const NavContainer = styled.div`
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 
+  overflow: hidden;
+`;
+
+export const NavDiv = styled.nav`
   display: flex;
   flex-wrap: wrap;
+
+  position: relative;
+  z-index: 1;
 
   padding: 0 2rem;
 
@@ -29,6 +39,7 @@ export const HamburgerMenu = styled.a`
 export const HamburgerDiv = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 
   cursor: pointer;
 
@@ -45,17 +56,24 @@ export const HamburgerDiv = styled.div`
 `;
 
 //test2
+export const MenuDiv = styled.div`
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+`;
+
 export const Menu = styled.div`
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  position: relative;
+  align-items: flex-start;
   transition: all 1s ease-in-out;
+
+  position: relative;
 
   overflow: hidden;
   flex-direction: column;
 
-  width: 95vw;
+  width: 100vw;
 
   height: ${({ isOpen }) => (isOpen ? "94.8vh" : "0")};
 
@@ -64,9 +82,9 @@ export const Menu = styled.div`
 
 export const MenuLink = styled.a`
   cursor: pointer;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
-  font-size: 5rem;
+  font-size: 8rem;
 
   color: var(--color-navText);
 
